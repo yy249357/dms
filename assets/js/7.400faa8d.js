@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{48:function(t,e,n){"use strict";n.r(e);var r={props:["url"],data:()=>({})},a=n(0),l=Object(a.a)(r,function(){var t=this.$createElement,e=this._self._c||t;return e("div",[e("a",{attrs:{href:this.url,target:"_blank"}})])},[],!1,null,null,null);e.default=l.exports}}]);

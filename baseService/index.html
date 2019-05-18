@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>大屏可视化组件 | 碧波荡漾博客</title>
+    <meta name="description" content="个人技术博客">
+    <link rel="icon" href="/myblog/img/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/myblog/assets/css/0.styles.52c329a1.css" as="style"><link rel="preload" href="/myblog/assets/js/app.3ba67177.js" as="script"><link rel="preload" href="/myblog/assets/js/2.508ae039.js" as="script"><link rel="preload" href="/myblog/assets/js/9.a0184548.js" as="script"><link rel="prefetch" href="/myblog/assets/js/10.1ee8ffcd.js"><link rel="prefetch" href="/myblog/assets/js/11.285915aa.js"><link rel="prefetch" href="/myblog/assets/js/12.762332bb.js"><link rel="prefetch" href="/myblog/assets/js/13.f324a690.js"><link rel="prefetch" href="/myblog/assets/js/14.7becf567.js"><link rel="prefetch" href="/myblog/assets/js/15.5ac0860d.js"><link rel="prefetch" href="/myblog/assets/js/3.ecc92459.js"><link rel="prefetch" href="/myblog/assets/js/4.7cfc3e8d.js"><link rel="prefetch" href="/myblog/assets/js/5.fd2ed6b2.js"><link rel="prefetch" href="/myblog/assets/js/6.88d770a9.js"><link rel="prefetch" href="/myblog/assets/js/7.400faa8d.js"><link rel="prefetch" href="/myblog/assets/js/8.13f6a2d2.js">
+    <link rel="stylesheet" href="/myblog/assets/css/0.styles.52c329a1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myblog/" class="home-link router-link-active"><img src="/myblog/img/head.jpeg" alt="碧波荡漾博客" class="logo"> <span class="site-name can-hide">碧波荡漾博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myblog/environment/" class="nav-link">环境搭建</a></div><div class="nav-item"><a href="/myblog/baseService/" class="nav-link router-link-exact-active router-link-active">基础服务</a></div><div class="nav-item"><a href="/myblog/component/" class="nav-link">组件使用</a></div><div class="nav-item"><a href="/myblog/deploy/" class="nav-link">打包部署</a></div><div class="nav-item"><a href="/myblog/standard/" class="nav-link">开发规范</a></div><div class="nav-item"><a href="http://caibaojian.com/vuepress/guide/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  API文档
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myblog/environment/" class="nav-link">环境搭建</a></div><div class="nav-item"><a href="/myblog/baseService/" class="nav-link router-link-exact-active router-link-active">基础服务</a></div><div class="nav-item"><a href="/myblog/component/" class="nav-link">组件使用</a></div><div class="nav-item"><a href="/myblog/deploy/" class="nav-link">打包部署</a></div><div class="nav-item"><a href="/myblog/standard/" class="nav-link">开发规范</a></div><div class="nav-item"><a href="http://caibaojian.com/vuepress/guide/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  API文档
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/myblog/baseService/" class="active sidebar-link">大屏可视化组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myblog/baseService/#文件引入" class="sidebar-link">文件引入</a></li><li class="sidebar-sub-header"><a href="/myblog/baseService/#项目接入配置" class="sidebar-link">项目接入配置</a></li><li class="sidebar-sub-header"><a href="/myblog/baseService/#组件使用" class="sidebar-link">组件使用</a></li></ul></li><li><a href="/myblog/baseService/微信SDK图像接口.html" class="sidebar-link">微信SDK图像接口使用说明</a></li></ul> </aside> <main class="page"> <div class="content default"><div class="tip custom-block"><p>大屏可视化组件提供了基于websocket的双工通信功能, 满足大屏对数据实时的需要，同时也为多个大屏项目提供了可复用的组件。</p></div> <h2 id="文件引入"><a href="#文件引入" aria-hidden="true" class="header-anchor">#</a> 文件引入</h2> <p>以CDN的方式在项目的入口html文件通过script引入大屏可视化文件。
+入口index.html引入方式如下:</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- 图表插件必须引入 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://mvs.gsafetyweixinsupport.cn:1080/fileserver/js/gv/echarts.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- 3D图插件,  可选 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://mvs.gsafetyweixinsupport.cn:1080/fileserver/js/gv/echarts-liquidfill.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- &lt;script src=&quot;https://mvs.gsafetyweixinsupport.cn:1080/fileserver/js/gv/echarts-gl.js&quot;&gt;&lt;/script&gt; --&gt;</span>
+<span class="token comment">&lt;!-- 字符云插件, 可选 --&gt;</span>
+<span class="token comment">&lt;!-- &lt;script src=&quot;https://mvs.gsafetyweixinsupport.cn:1080/fileserver/js/gv/echarts-wordcloud.js&quot;&gt;&lt;/script&gt; --&gt;</span>
+<span class="token comment">&lt;!-- 主文件必须引入, 封装可视化调用的相关api --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://mvs.gsafetyweixinsupport.cn:1080/fileserver/js/gv/gv.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="项目接入配置"><a href="#项目接入配置" aria-hidden="true" class="header-anchor">#</a> 项目接入配置</h2> <p>项目目录assets/js/中新增componentsConfig.js作为可视化组件的配置文件</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// websocket服务初始化</span>
+window<span class="token punctuation">.</span>wsduplexclient <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">gv<span class="token punctuation">.</span>net<span class="token punctuation">.</span>WSDuplexClient</span><span class="token punctuation">(</span><span class="token string">'wss://mvs.gsafetyweixinsupport.cn:1080/dv/dv/task/webSocket'</span><span class="token punctuation">)</span>
+<span class="token comment">// gv服务初始化</span>
+window<span class="token punctuation">.</span>restService <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">gv<span class="token punctuation">.</span>net<span class="token punctuation">.</span>RestService</span><span class="token punctuation">(</span><span class="token string">'https://mvs.gsafetyweixinsupport.cn:1080/dv/'</span><span class="token punctuation">)</span>
+<span class="token comment">// 双工通信连接服务器</span>
+wsduplexclient<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 加载gv服务的配置模板</span>
+gv<span class="token punctuation">.</span>config<span class="token punctuation">.</span>ChartTemplate<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// 引入安全警告组件</span>
+<span class="token keyword">import</span> safetyWarmBar <span class="token keyword">from</span> <span class="token string">'./visualComponents/safetyWarmBar.js'</span>
+<span class="token comment">// 引入燃气监测组件</span>
+<span class="token keyword">import</span> deviceScatterPrint <span class="token keyword">from</span> <span class="token string">'./visualComponents/deviceScatterPrint.js'</span>
+<span class="token comment">// 引入人员密度分析组件</span>
+<span class="token keyword">import</span> personLinePrint <span class="token keyword">from</span> <span class="token string">'./visualComponents/personLinePrint.js'</span>
+<span class="token comment">// 引入消防设备监测组件</span>
+<span class="token keyword">import</span> deviceBarPrint <span class="token keyword">from</span> <span class="token string">'./visualComponents/deviceBarPrint.js'</span>
+<span class="token comment">// 输出组件</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  safetyWarmBar<span class="token punctuation">,</span> deviceScatterPrint<span class="token punctuation">,</span> personLinePrint<span class="token punctuation">,</span> deviceBarPrint
+<span class="token punctuation">}</span>
+</code></pre></div><p>然后在项目主文件main.js中引入</p> <ul><li>import componentsConfig from './assets/js/componentsConfig.js'
+最后加载到vue原型中</li> <li>Object.keys(componentsConfig).forEach(key =&gt; Vue.prototype[key] = componentsConfig[key])</li></ul> <h2 id="组件使用"><a href="#组件使用" aria-hidden="true" class="header-anchor">#</a> 组件使用</h2> <p>这里用代码演示&quot;人员密度分析图&quot;可视化组件的使用:
+在personLinePrint.js文件中, 代码如下:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 人员密度分析折线图</span>
+<span class="token keyword">const</span> <span class="token function-variable function">personLinePrint</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">id</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 开启websocket</span>
+    <span class="token keyword">let</span> vataService <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">gv<span class="token punctuation">.</span>net<span class="token punctuation">.</span>VataService</span><span class="token punctuation">(</span>restService<span class="token punctuation">,</span> <span class="token string">&quot;WebSocketPersonDensity&quot;</span><span class="token punctuation">)</span>
+    <span class="token comment">// 开启gv服务</span>
+    <span class="token keyword">let</span> vataSource <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">gv<span class="token punctuation">.</span>source<span class="token punctuation">.</span>VataSource</span><span class="token punctuation">(</span>vataService<span class="token punctuation">)</span>
+    <span class="token comment">// 传入元素id</span>
+    <span class="token keyword">let</span> dom <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 生成echart实例</span>
+    <span class="token keyword">let</span> personLineChart <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">gv<span class="token punctuation">.</span>chart<span class="token punctuation">.</span>BasicLineChart</span><span class="token punctuation">(</span>vataSource<span class="token punctuation">,</span> dom<span class="token punctuation">)</span>
+
+    <span class="token comment">// echart个性化配置</span>
+    personLineChart<span class="token punctuation">.</span><span class="token function">config</span><span class="token punctuation">(</span><span class="token string">&quot;grid&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        left<span class="token punctuation">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+        bottom<span class="token punctuation">:</span> <span class="token string">&quot;30%&quot;</span><span class="token punctuation">,</span>
+        width<span class="token punctuation">:</span> <span class="token string">&quot;85%&quot;</span><span class="token punctuation">,</span>
+        y<span class="token punctuation">:</span> <span class="token number">20</span> <span class="token comment">//坐标轴顶端与边框的距离</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    personLineChart<span class="token punctuation">.</span><span class="token function">config</span><span class="token punctuation">(</span><span class="token string">&quot;tooltip&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        trigger<span class="token punctuation">:</span> <span class="token string">'axis'</span><span class="token punctuation">,</span>
+        confine<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token function-variable function">formatter</span><span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">let</span> result <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+            <span class="token keyword">let</span> data <span class="token operator">=</span> val<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>data
+            Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> i</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    result <span class="token operator">+=</span> data<span class="token punctuation">[</span>name<span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">&quot;&lt;br&gt;&quot;</span>
+                <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                    result <span class="token operator">+=</span> val<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>seriesName <span class="token operator">+</span> <span class="token string">&quot;:&quot;</span> <span class="token operator">+</span> data<span class="token punctuation">[</span>name<span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">&quot;&lt;br&gt;&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span>
+            <span class="token keyword">return</span> result
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    personLineChart<span class="token punctuation">.</span><span class="token function">config</span><span class="token punctuation">(</span><span class="token string">&quot;legend.show&quot;</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+    personLineChart<span class="token punctuation">.</span><span class="token function">config</span><span class="token punctuation">(</span><span class="token string">&quot;color&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">&quot;#00CCFE&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;#F1CC02&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;#F7541B&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    personLineChart<span class="token punctuation">.</span><span class="token function">config</span><span class="token punctuation">(</span><span class="token string">&quot;xAxis&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        nameLocation<span class="token punctuation">:</span> <span class="token string">&quot;start&quot;</span><span class="token punctuation">,</span>
+        boundaryGap<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        axisLine<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            lineStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                color<span class="token punctuation">:</span> <span class="token string">&quot;#748Dac&quot;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        axisTick<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            show<span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token comment">//不显示刻度线</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            textStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                color<span class="token punctuation">:</span> <span class="token string">&quot;#7398be&quot;</span><span class="token punctuation">,</span> <span class="token comment">//坐标值的具体的颜色</span>
+                fontSize<span class="token punctuation">:</span> <span class="token number">14</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        splitLine<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            show<span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token comment">//去掉分割线</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    personLineChart<span class="token punctuation">.</span><span class="token function">config</span><span class="token punctuation">(</span><span class="token string">&quot;yAxis&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token comment">// interval: 0.2,</span>
+        nameGap<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token comment">//控制name中的文字上下的距离</span>
+        nameLocation<span class="token punctuation">:</span> <span class="token string">&quot;start&quot;</span><span class="token punctuation">,</span> <span class="token comment">//也是控制name</span>
+        axisLine<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        axisTick<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            textStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                color<span class="token punctuation">:</span> <span class="token string">&quot;#7398be&quot;</span><span class="token punctuation">,</span> <span class="token comment">//坐标值得具体的颜色</span>
+                fontSize<span class="token punctuation">:</span> <span class="token number">15</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        splitLine<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            lineStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                type<span class="token punctuation">:</span> <span class="token string">&quot;solid&quot;</span><span class="token punctuation">,</span> <span class="token comment">//dashed</span>
+                color<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;#143d63&quot;</span><span class="token punctuation">]</span> <span class="token comment">//分割线的颜色</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    personLineChart<span class="token punctuation">.</span><span class="token function">config</span><span class="token punctuation">(</span><span class="token string">&quot;series[0]&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        symbol<span class="token punctuation">:</span> <span class="token string">&quot;circle&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">// barWidth:15,</span>
+        symbolSize<span class="token punctuation">:</span> <span class="token number">8</span><span class="token punctuation">,</span>
+        itemStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            normal<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                color<span class="token punctuation">:</span> <span class="token string">'#20334d'</span><span class="token punctuation">,</span>
+                borderColor<span class="token punctuation">:</span> <span class="token string">'#03afdf'</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        lineStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            normal<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                color<span class="token punctuation">:</span> <span class="token string">'#03afdf'</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    personLineChart<span class="token punctuation">.</span><span class="token function">config</span><span class="token punctuation">(</span><span class="token string">&quot;series[1]&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        symbol<span class="token punctuation">:</span> <span class="token string">&quot;circle&quot;</span><span class="token punctuation">,</span>
+        itemStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            normal<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                color<span class="token punctuation">:</span> <span class="token string">'#20334d'</span><span class="token punctuation">,</span>
+                borderColor<span class="token punctuation">:</span> <span class="token string">'#2cd175'</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        lineStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            normal<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                color<span class="token punctuation">:</span> <span class="token string">'#2cd175'</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    personLineChart<span class="token punctuation">.</span><span class="token function">config</span><span class="token punctuation">(</span><span class="token string">&quot;series[2]&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        symbol<span class="token punctuation">:</span> <span class="token string">&quot;circle&quot;</span><span class="token punctuation">,</span>
+        itemStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            normal<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                color<span class="token punctuation">:</span> <span class="token string">'#20334d'</span><span class="token punctuation">,</span>
+                borderColor<span class="token punctuation">:</span> <span class="token string">'#f0b135'</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        lineStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            normal<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                color<span class="token punctuation">:</span> <span class="token string">'#f0b135'</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    personLineChart<span class="token punctuation">.</span><span class="token function">config</span><span class="token punctuation">(</span><span class="token string">&quot;series[3]&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        symbol<span class="token punctuation">:</span> <span class="token string">&quot;circle&quot;</span><span class="token punctuation">,</span>
+        itemStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            normal<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                color<span class="token punctuation">:</span> <span class="token string">'#20334d'</span><span class="token punctuation">,</span>
+                borderColor<span class="token punctuation">:</span> <span class="token string">'#cde1d5'</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        lineStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            normal<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                color<span class="token punctuation">:</span> <span class="token string">'#cde1d5'</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    personLineChart<span class="token punctuation">.</span><span class="token function">config</span><span class="token punctuation">(</span><span class="token string">&quot;tooltip&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        trigger<span class="token punctuation">:</span> <span class="token string">'axis'</span><span class="token punctuation">,</span>
+        axisPointer<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            type<span class="token punctuation">:</span> <span class="token string">'shadow'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        textStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            align<span class="token punctuation">:</span> <span class="token string">'left'</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token comment">//双工通信</span>
+    wsduplexclient<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'WebSocketPersonDensity'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">chartData</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        personLineChart<span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span>chartData<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// wsduplexclient.un('WebSocketPersonDensity')</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> personLinePrint
+</code></pre></div><p>在项目的vue文件中, 进入页面初始化调用</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>chart_xxx<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>   
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">personLinePrint</span><span class="token punctuation">(</span><span class="token string">'chart_xxx'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    watch<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>其中'chart_xxx'是元素id。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/myblog/baseService/微信SDK图像接口.html">
+          微信SDK图像接口使用说明
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/myblog/assets/js/app.3ba67177.js" defer></script><script src="/myblog/assets/js/2.508ae039.js" defer></script><script src="/myblog/assets/js/9.a0184548.js" defer></script>
+  </body>
+</html>
